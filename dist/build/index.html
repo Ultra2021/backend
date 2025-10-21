@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .api-info {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .endpoint {
+            background: #f8f9fa;
+            padding: 10px;
+            margin: 5px 0;
+            border-left: 4px solid #007bff;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Employee App Backend</h1>
+        <p>The Employee App backend is running successfully!</p>
+        
+        <div class="api-info">
+            <h3>Available API Endpoints:</h3>
+            <div class="endpoint">GET /api/employees - Get all employees</div>
+            <div class="endpoint">GET /api/employees/:id - Get single employee</div>
+            <div class="endpoint">POST /api/employees - Add new employee</div>
+            <div class="endpoint">PUT /api/employees/:id - Update employee</div>
+            <div class="endpoint">DELETE /api/employees/:id - Delete employee</div>
+            <div class="endpoint">GET /api/health - Health check</div>
+        </div>
+
+        <div class="api-info">
+            <h3>Employee Schema:</h3>
+            <pre>{
+  "name": "string (required)",
+  "position": "string (required)", 
+  "department": "string (required)",
+  "salary": "number (required)"
+}</pre>
+        </div>
+
+        <p><strong>Note:</strong> This is a placeholder frontend. Replace the contents of the dist/build folder with your actual frontend application.</p>
+    </div>
+</body>
+</html>
