@@ -32,8 +32,8 @@ logs
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file (keep .env for template)
-# .env
+# dotenv environment variables file
+.env
 
 # IDE files
 .vscode/
