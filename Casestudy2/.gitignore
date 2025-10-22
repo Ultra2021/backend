@@ -5,6 +5,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Environment variables
+.env
 .env.local
 .env.development.local
 .env.test.local
@@ -32,9 +33,6 @@ logs
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
-.env
-
 # IDE files
 .vscode/
 .idea/
@@ -51,9 +49,8 @@ logs
 ehthumbs.db
 Thumbs.db
 
-# Build directories
-build/
-dist/
+# Build directories (keep dist as it contains frontend)
+# dist/
 
 # Coverage directory used by tools like istanbul
 coverage/

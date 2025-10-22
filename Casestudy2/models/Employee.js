@@ -11,15 +11,20 @@ const employeeSchema = new mongoose.Schema({
     required: [true, 'Employee position is required'],
     trim: true
   },
-  department: {
+  location: {
     type: String,
-    required: [true, 'Employee department is required'],
+    required: [true, 'Employee location is required'],
     trim: true
   },
   salary: {
     type: Number,
     required: [true, 'Employee salary is required'],
     min: [0, 'Salary cannot be negative']
+  },
+  dateOfJoining: {
+    type: Date,
+    required: [true, 'Date of joining is required'],
+    default: Date.now
   }
 }, {
   timestamps: true // Adds createdAt and updatedAt fields
